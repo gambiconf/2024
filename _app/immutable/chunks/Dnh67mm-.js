@@ -1,0 +1,1 @@
+var s;const e=((s=globalThis.__sveltekit_1re2bas)==null?void 0:s.base)??"/2024";var a;const t=((a=globalThis.__sveltekit_1re2bas)==null?void 0:a.assets)??"https://gambiconf.dev/2024";export{t as a,e as b};
