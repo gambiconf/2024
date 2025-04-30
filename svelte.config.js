@@ -31,7 +31,7 @@ const config = {
 
   kit: {
     paths: {
-      base: basePath,    
+      base: basePath,
     },
     adapter: staticAdapter(),
   },
