@@ -3,7 +3,7 @@
 > 🐒 The Blow Your Mind Conference
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/9501115/162629911-d01fcf9d-61be-4d3b-9503-8ab04d496554.png">
+  <img width="1643" alt="image" src="https://github.com/user-attachments/assets/0adb5159-4432-41a8-8efb-7241cb868cea" />
 </p>
 
 # How to run
