@@ -1,18 +1,18 @@
-import preprocess from "svelte-preprocess";
+import { sveltePreprocess } from "svelte-preprocess";
 import staticAdapter from "@sveltejs/adapter-static";
 
-// const environment = process.env.ENV;
-// const mapEnvironmentToBasePath = {
-//   production: "/2024",
-//   staging: "/website-staging",
-// };
-// const basePath = mapEnvironmentToBasePath[environment] ?? process.env.BASE_PATH;
+const environment = process.env.ENV;
+const mapEnvironmentToBasePath = {
+  production: "/2024",
+  staging: "/website-staging",
+};
+const basePath = mapEnvironmentToBasePath[environment] ?? process.env.BASE_PATH;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: preprocess(),
+  preprocess: sveltePreprocess(),
 
   onwarn: (warning, handler) => {
     if (
@@ -31,7 +31,7 @@ const config = {
 
   kit: {
     paths: {
-      relative: false,
+      base: basePath,    
     },
     adapter: staticAdapter(),
   },
